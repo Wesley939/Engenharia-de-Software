@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <!--formulario base-->
+    <form>
+        <!--input do nome do usuario-->
+        <label for="nome" required>Nome:</label>
+        <input type="text" name="nome">
+        <br>
+        <!--input do email do usuario-->
+        <label for="email" required>Email:</label>
+        <input type="email" name="email">
+        <br>
+        <!--input do telefone do usuario-->
+        <label for="telefone" required>Telefone:</label>
+        <input type="tel" name="telefone" pattern="[0-9]{6}$">
+        <br>
+        <!--Data de nacimento-->
+        <label for="dataNascimento" required>Data de Nascimento:</label>
+        <input type="date" name="dataNascimento">
+        <br>
+        <!--Mensagem-->
+        <label for="mensagem">Mensagem:</label>
+        <textarea name="mensagem" cols="50" rows="5"></textarea>
+
+        <br>
+        <!--Botão de enviar-->
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
